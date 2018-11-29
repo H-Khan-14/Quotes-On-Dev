@@ -1,7 +1,293 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+  background-color: #222222;
+}
 
+a:hover {
+  color: #090 !important;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+// .archive-categories {
+//   display: table;
+// }
+
+.entry-meta {
+  margin-bottom: 3em;
+}
+
+.dotted-line {
+  border-bottom: 1px dotted #fff;
+  list-style: none;
+  li {
+  }
+}
+.archive-authors ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  line-height: 0.25rem;
+  li {
+    padding-left: 1rem;
+  }
+}
+.archive-categories ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  line-height: 0.25rem;
+  li {
+    padding-left: 1rem;
+  }
+}
+
+.archive-tags ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  line-height: 0.25rem;
+  li {
+    padding-left: 1rem;
+  }
+}
+
+#page {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%;
+}
+/* Content Area div where the quotes are */
+
+.site-content {
+  position: relative;
+  margin: 4.5rem 175px 1.5rem;
+}
+
+.site-main {
+  color: #fff;
+  font-family: Exo Web, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: block;
+  box-sizing: inherit;
+}
+
+.search-box {
+  border: none;
+  padding: none;
+  margin: none;
+}
+
+.search-field {
+  background-color: #222222;
+  border: 1px solid #0c0 !important;
+  color: #fff !important;
+}
+
+.search-field:focus {
+  border: 1px solid #fff !important;
+}
+
+.search-submit {
+  color: #0c0;
+  background-color: #222222;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.search-submit:hover {
+  box-shadow: none;
+  color: #090 !important;
+  border: #090 !important;
+}
+
+.icon-search {
+  font-size: 1rem;
+}
+/* Submit a Quote Page */
+.submit-quote-form {
+  label {
+    padding-bottom: 1em;
+  }
+  input {
+    background-color: #222222;
+    color: #fff !important;
+    font-family: Exo Web, sans-serif;
+    border: 1px solid #0c0 !important;
+    width: 23em;
+    font-size: 17px;
+    margin-top: 0.7em;
+  }
+  #submit {
+    color: #0c0 !important;
+    box-shadow: none;
+    text-shadow: none;
+    height: 3em;
+    width: 15em;
+  }
+  #submit:hover {
+    box-shadow: none;
+    color: #090;
+    border: #090;
+  }
+  #quote-box {
+    margin-top: 0.7em;
+    width: 39em;
+    height: 7em;
+    background-color: #222222;
+    color: #fff !important;
+    font-family: Exo Web, sans-serif;
+    border: 1px solid #0c0 !important;
+  }
+}
+
+/* Footer */
+.site-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4.5rem 0 3rem;
+  font-family: Exo Web, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-navigation {
+  margin: 1rem 0 0;
+  padding: 0;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+    border-right: 1px solid #fff;
+    padding: 0 1rem;
+  }
+}
+
+a {
+  color: #0c0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0c0;
+}
+
+.whitey {
+  padding: 0 1rem;
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */
+
+/* front-page.php */
+.quote-area {
+  font-size: 2.5rem;
+}
+
+.entry-title {
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.show-another {
+  font-family: Exo Web, sans-serif;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.75rem 2.25rem;
+  display: block;
+}
+
+.show-another:hover {
+  color: #090;
+  border: 2px solid #090;
+  box-shadow: none;
+}
+
+@media (min-width: 620px) {
+  .entry-content {
+    font-size: 1.75rem;
+  }
+  .logo {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .site-info {
+    justify-content: flex-end;
+  }
+  .show-another {
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 700px;
+  }
+
+  .content-area:before {
+    content: '\f10d';
+    left: -175px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0;
+  }
+
+  .content-area:after {
+    content: '\f10e';
+    right: -175px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (max-width: 619px) {
+  .archive-categories {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1.125rem;
+  }
+  .site-info {
+    margin: 4.5rem 0 3rem;
+  }
+  .logo {
+    width: 300px;
+  }
+  .entry-content {
+    font-size: 1.25rem;
+  }
+}
